@@ -1,39 +1,13 @@
 <?php
 /*
 Plugin Name: Display SQL Stats
-Plugin URI: http://wordpress.org/plugins/display-sql-stats/
-Description: Displaying SQL result data as graphical chart on your blog (shortcodes) or your dashboard with use of Google Chart Tools.
-Version: 0.9.4.2
-Author: Jürgen Schulze
-Author URI: http://1manfactory.com
-License: GNU GP
-*/
+Plugin URI:
 
-/*  Copyright 2013, 2014 Juergen Schulze, 1manfactory.com (email : 1manfactory@gmail.com)
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
 
-// Version/Build of the plugin and some default values
-define( 'DSS_PLUGIN_NAME', 'Display SQL Stats' );
-define( 'DSS_CURRENT_VERSION', '0.9.4.2' );
-define( 'DSS_CURRENT_BUILD', '21' );
-define( 'DSS_AUTHOR_URI', 'http://1manfactory.com/dss' );
+
 define( 'DSS_SQL_DEFAULT', 'SELECT DATE_FORMAT (comment_date, "%Y-%m-%d") AS Date, COUNT(*) AS Count, 3 AS Target FROM wp_comments  GROUP BY Date ORDER BY Date ASC' );
-define( 'DSS_NOTEPAD_DEFAULT', __("Store whatever information you like here.\nOr try this statement:\nSELECT DATE_FORMAT (comment_date, \"%Y-%m-%d\") AS Date, COUNT(*) AS Count, 3 AS Target FROM wp_comments  GROUP BY Date ORDER BY Date ASC", 'dss') );
 define( 'DSS_WIDTH_DEFAULT_NEW', '500' );
 define( 'DSS_HEIGHT_DEFAULT_NEW', '500' );
 

@@ -33,7 +33,7 @@ This section describes how to install the plugin and get it working.
 
 == Screenshots ==
 
- 
+
 
 
 == Changelog ==
